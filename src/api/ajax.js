@@ -28,7 +28,6 @@ export default function ajax (url,data={},type='GET'){
       promise = axios.post(url,data)
     }
 
-
     promise.then(function(response){
       // 成功了调用resolve
       resolve(response.data)
@@ -38,7 +37,6 @@ export default function ajax (url,data={},type='GET'){
       })
 
   })
-
   return promise
 }
 
